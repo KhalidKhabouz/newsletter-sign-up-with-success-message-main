@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --tomato: hsl(4, 100%, 67%);
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  background-color: var(--dark-slate-grey);
+}
+
+ul {
+  list-style-type: none;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+#newsletter-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  width: 928px; /* 58rem */
+  padding: 1.5rem;
+  border-radius: 32px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 42px;
+  padding-top: 68px;
+  height: 100%;
+}
+.card-content__title {
+  margin-bottom: 22px;
+  font-size: 54px;
+  font-weight: 700;
+  color: var(--charcoal-grey);
+}
+.card-content__description {
+  font-size: 16px;
+  margin-bottom: 24px;
+  line-height: 1.4;
+}
+.card-content__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  margin-bottom: 48px;
+}
+.card-content__item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+}
+.card-content__item p {
+  font-size: 16px;
+}
+.card-content__icon {
+  display: block;
+  height: 21px;
+  width: 21px;
+  background: url(/assets/images/icon-list.svg) no-repeat center;
+}
+
+.illustration-sign-up-desktop {
+  height: 593px;
+}
+
+.card-content__form form {
+  display: flex;
+  flex-direction: column;
+}
+.card-content__form form label {
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 900;
+}
+.card-content__form form input {
+  border: none;
+  border: 1px solid var(--grey);
+  height: 56px;
+  border-radius: 8px;
+  outline: none;
+  padding-left: 22px;
+  font-size: 16px;
+  color: var(--grey);
+  margin-bottom: 24px;
+}
+.card-content__form form button {
+  all: unset;
+  background-color: var(--dark-slate-grey);
+  display: inline-block;
+  color: var(--white);
+  font-size: 16px;
+  text-align: center;
+  padding: 20px 64px 17px;
+  border-radius: 8px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
