@@ -157,3 +157,50 @@ main {
     cursor: pointer;
   }
 }
+
+// Modal Success
+
+.modal-success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--white);
+  width: 504px;
+  border-radius: 32px;
+  padding: 48px 64px 64px;
+
+  &__icon {
+    display: block;
+    background: url(/assets/images/icon-success.svg) no-repeat center;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-size: 56px;
+    color: var(--dark-slate-grey);
+    margin-bottom: 24px;
+    line-height: 1;
+  }
+
+  &__description {
+    margin-bottom: 40px;
+    line-height: 1.5;
+    color: var(--charcoal-grey);
+  }
+
+  &__dismiss-btn {
+    all: unset;
+    background-color: var(--dark-slate-grey);
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    padding: 21px 64px 17px;
+    border-radius: 8px;
+    align-self: stretch;
+    cursor: pointer;
+  }
+}

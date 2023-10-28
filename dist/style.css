@@ -120,4 +120,45 @@ main {
   padding: 20px 64px 17px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.modal-success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--white);
+  width: 504px;
+  border-radius: 32px;
+  padding: 48px 64px 64px;
+}
+.modal-success__icon {
+  display: block;
+  background: url(/assets/images/icon-success.svg) no-repeat center;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 40px;
+}
+.modal-success__title {
+  font-size: 56px;
+  color: var(--dark-slate-grey);
+  margin-bottom: 24px;
+  line-height: 1;
+}
+.modal-success__description {
+  margin-bottom: 40px;
+  line-height: 1.5;
+  color: var(--charcoal-grey);
+}
+.modal-success__dismiss-btn {
+  all: unset;
+  background-color: var(--dark-slate-grey);
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  padding: 21px 64px 17px;
+  border-radius: 8px;
+  align-self: stretch;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

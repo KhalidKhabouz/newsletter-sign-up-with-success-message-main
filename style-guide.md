@@ -31,18 +31,10 @@ The designs were created to the following widths:
 - Family: [Roboto](https://fonts.google.com/specimen/Roboto)
 - Weights: 400, 700
 
-
-
     <!-- Sign-up form start -->
-
-
 
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-
-    Thanks for subscribing! A confirmation email has been sent to
-    ash@loremcompany.com. Please open it and click the button inside to confirm
-    your subscription. Dismiss message
 
     <!-- Success message end -->
