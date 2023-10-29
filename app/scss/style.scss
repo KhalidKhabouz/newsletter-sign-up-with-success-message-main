@@ -145,6 +145,15 @@ main {
     margin-bottom: 24px;
   }
 
+  input:hover {
+    cursor: pointer;
+  }
+
+  input:focus {
+    border-color: var(--dark-slate-grey);
+    color: var(--dark-slate-grey);
+  }
+
   button {
     all: unset;
     background-color: var(--dark-slate-grey);
@@ -156,12 +165,52 @@ main {
     border-radius: 8px;
     cursor: pointer;
   }
+
+  button:hover {
+    background: linear-gradient(to right, #ff537b, #fd6941);
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.error-txt {
+  display: none;
+  font-size: 12px;
+  font-weight: 900;
+  color: var(--tomato);
+}
+
+.invalid-input {
+  background-color: #ffe8e6;
+  border-color: var(--tomato);
+  color: var(--tomato);
 }
 
 // Modal Success
+.modal-container {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
 
 .modal-success {
-  display: flex;
+  display: none;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -203,4 +252,10 @@ main {
     align-self: stretch;
     cursor: pointer;
   }
+
+  &__dismiss-btn:hover {
+    background: linear-gradient(to right, #ff537b, #fd6941);
+  }
 }
+
+

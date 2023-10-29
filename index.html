@@ -30,16 +30,7 @@
   </head>
   <body>
     <main>
-      <div class="modal-success">
-        <i class="modal-success__icon"></i>
-        <h1 class="modal-success__title">Thanks for subscribing!</h1>
-        <p class="modal-success__description">
-          A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. Please
-          open it and click the button inside to confirm your subscription.
-        </p>
-        <button class="modal-success__dismiss-btn">Dismiss message</button>
-      </div>
-      <!-- <div id="newsletter-card">
+      <div id="newsletter-card">
         <div class="card-content">
           <h1 class="card-content__title">Stay updated!</h1>
           <p class="card-content__description">
@@ -60,11 +51,19 @@
             </li>
           </ul>
           <div class="card-content__form">
-            <form action="">
-                <label for="">Email address</label>
-                <input type="text" placeholder="email@company.com" />
-                <button type="submit">Subscribe to monthly newsletter</button>
-             
+            <form action="" onsubmit="event.preventDefault();">
+              <div>
+                <label for="email-input">Email address</label>
+                <p class="error-txt">Valid email required</p>
+              </div>
+              <input
+                id="email-input"
+                type="text"
+                placeholder="email@company.com"
+              />
+              <button id="submit-bnt" type="button">
+                Subscribe to monthly newsletter
+              </button>
             </form>
           </div>
         </div>
@@ -330,7 +329,21 @@
             </g>
           </svg>
         </div>
-      </div> -->
+      </div>
+
+      <!-- Modal Success -->
+      <div class="modal-container">
+        <div class="modal-success">
+          <i class="modal-success__icon"></i>
+          <h1 class="modal-success__title">Thanks for subscribing!</h1>
+          <p class="modal-success__description">
+            A confirmation email has been sent to
+            <strong id="submited-email">ash@loremcompany.com</strong>. Please open it and click the
+            button inside to confirm your subscription.
+          </p>
+          <button class="modal-success__dismiss-btn">Dismiss message</button>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="attribution">
