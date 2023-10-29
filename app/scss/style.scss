@@ -69,12 +69,14 @@ main {
   // background-color: aqua;
   // border: 1px solid red;
 
-  padding: 42px;
-  padding-top: 68px;
+  padding-left: 40px;
+  padding-top: 69px;
+  padding-right: 64px;
+  padding-bottom: 41px;
   height: 100%;
 
   &__title {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     font-size: 54px;
     font-weight: 700;
     color: var(--charcoal-grey);
@@ -82,15 +84,20 @@ main {
 
   &__description {
     font-size: 16px;
-    margin-bottom: 24px;
-    line-height: 1.4;
+    margin-bottom: 25px;
+    line-height: 1.5;
   }
 
   &__list {
     display: flex;
     flex-direction: column;
-    row-gap: 12px;
-    margin-bottom: 48px;
+    row-gap: 13px;
+    margin-bottom: 43px;
+  }
+
+  &__list li:last-of-type {
+    margin-top: 1px;
+
   }
 
   &__item {
@@ -257,5 +264,3 @@ main {
     background: linear-gradient(to right, #ff537b, #fd6941);
   }
 }
-
-

@@ -48,26 +48,31 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  padding: 42px;
-  padding-top: 68px;
+  padding-left: 40px;
+  padding-top: 69px;
+  padding-right: 64px;
+  padding-bottom: 41px;
   height: 100%;
 }
 .card-content__title {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   font-size: 54px;
   font-weight: 700;
   color: var(--charcoal-grey);
 }
 .card-content__description {
   font-size: 16px;
-  margin-bottom: 24px;
-  line-height: 1.4;
+  margin-bottom: 25px;
+  line-height: 1.5;
 }
 .card-content__list {
   display: flex;
   flex-direction: column;
-  row-gap: 12px;
-  margin-bottom: 48px;
+  row-gap: 13px;
+  margin-bottom: 43px;
+}
+.card-content__list li:last-of-type {
+  margin-top: 1px;
 }
 .card-content__item {
   display: flex;
