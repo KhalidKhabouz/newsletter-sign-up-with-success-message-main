@@ -101,13 +101,13 @@ main {
 }
 .card-content__form form input {
   border: none;
-  border: 1px solid var(--grey);
   height: 56px;
   border-radius: 8px;
   outline: none;
   padding-left: 22px;
   font-size: 16px;
   color: var(--grey);
+  border: 1px solid var(--grey);
   margin-bottom: 24px;
 }
 .card-content__form form input:hover {
@@ -145,8 +145,6 @@ main {
 
 .invalid-input {
   background-color: #ffe8e6;
-  border-color: var(--tomato);
-  color: var(--tomato);
 }
 
 .modal-container {

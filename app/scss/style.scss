@@ -135,13 +135,13 @@ main {
 
   input {
     border: none;
-    border: 1px solid var(--grey);
     height: 56px;
     border-radius: 8px;
     outline: none;
     padding-left: 22px;
     font-size: 16px;
     color: var(--grey);
+    border: 1px solid var(--grey);
     margin-bottom: 24px;
   }
 
@@ -185,8 +185,8 @@ main {
 
 .invalid-input {
   background-color: #ffe8e6;
-  border-color: var(--tomato);
-  color: var(--tomato);
+  // color: var(--tomato);
+  // border: 1px solid var(--tomato);
 }
 
 // Modal Success

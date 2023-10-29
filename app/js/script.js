@@ -14,6 +14,7 @@ function submit() {
   if (!input.value.match(validRegex)) {
     errorTxt.style.display = "block";
     input.style.color = "var(--tomato)";
+    input.style.borderColor = "var(--tomato)";
     input.classList.add('invalid-input');
   } else {
     modalEl.style.display = "flex";
@@ -27,6 +28,8 @@ function hideModal() {
   modalContainer.style.display = "none";
   input.classList.remove('invalid-input');
   errorTxt.style.display = "none";
+  input.style.color = "var(--grey)";
+  input.style.borderColor = "var(--grey)";
   input.value = "";
 }
 
